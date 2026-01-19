@@ -1,0 +1,48 @@
+{
+  "name": "aperium",
+  "version": "0.0.8",
+  "description": "Aperium: A lightweight package management CLI tool",
+  "main": "dist/aper.js",
+  "type": "module",
+  "bin": {
+    "aper": "./dist/aper.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/aper.ts",
+    "postbuild": "npm link"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "chalk": "^5.4.1",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^12.7.0",
+    "simple-git": "^3.28.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/fs-extra": "^9.0.13",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^18.19.80",
+    "typescript": "^5.8.2",
+    "ts-node": "^10.9.2"
+  },
+  "keywords": [
+    "aperium",
+    "aper",
+    "cli",
+    "package-manager",
+    "typescript",
+    "npm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yigitkabak/aperium"
+  },
+  "author": "Yiğit Kabak",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/yigitkabak/aperium"
+  },
+  "homepage": "https://github.com/yigitkabak/aperium#readme"
+}
